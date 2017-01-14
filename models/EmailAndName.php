@@ -2,13 +2,12 @@
 
 namespace models;
 
-class User
-    implements HasEmailAndName
-{
-    public $id;
-    public $phone;
 
-    use EmailAndName;
+trait EmailAndName
+{
+
+    public $email;
+    public $name;
 
     public function getEmail()
     {

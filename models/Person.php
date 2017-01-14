@@ -6,10 +6,10 @@ class Person
     implements HasEmailAndName
 {
     public $id;
-    public $email;
-    public $name;
     public $phone;
     public $client_id;
+
+    use EmailAndName;
 
     public function getEmail()
     {

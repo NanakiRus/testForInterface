@@ -12,7 +12,7 @@ class Client
 
     public function getEmail()
     {
-
+        return 'client@mail.ru';
     }
 
 }

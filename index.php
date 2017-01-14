@@ -14,4 +14,4 @@ function sendMail($name, $email) {
     echo 'почта для ' . $name . ' отправлена на адрес ' . $email;
 }
 
-sendMail($user->name, $user->email);
+sendMail($user->name, $user->getEmail());

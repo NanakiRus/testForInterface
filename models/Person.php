@@ -1,5 +1,7 @@
 <?php
 
+namespace models;
+
 class Person
     implements HasEmail
 {
@@ -11,7 +13,7 @@ class Person
 
     public function getEmail()
     {
-        
+
     }
 
 }

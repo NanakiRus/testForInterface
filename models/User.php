@@ -3,7 +3,7 @@
 namespace models;
 
 class User
-    implements HasEmail
+    implements HasEmail, HasName
 {
     public $id;
     public $email;
@@ -13,5 +13,10 @@ class User
     public function getEmail()
     {
         return $this->email;
+    }
+
+    public function hasName()
+    {
+        return $this->name;
     }
 }

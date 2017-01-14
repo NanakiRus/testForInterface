@@ -3,7 +3,7 @@
 namespace models;
 
 class Client
-    implements HasEmail
+    implements HasEmail, HasName
 {
     public $id;
     public $phone;
@@ -13,6 +13,11 @@ class Client
     public function getEmail()
     {
         return 'client@mail.ru';
+    }
+
+    public function hasName()
+    {
+        return 'Фирма';
     }
 
 }

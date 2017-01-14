@@ -15,12 +15,12 @@ $client->firm_name = 'ВариМет и Ко';
 $person->email = 'someshit@shit.net';
 $person->name = 'Георг';
 
-function sendMail($name, $email) {
-    echo 'почта для ' . $name . ' отправлена на адрес ' . $email;
+function sendMail($obj) {
+    echo 'почта для ' . $obj->hasName() . ' отправлена на адрес ' . $onj->getEmail();
 }
 
-sendMail($user->name, $user->getEmail());
+sendMail($user);
 
-sendMail($client->firm_name, $client->getEmail());
+sendMail($client);
 
-sendMail($person->name, $person->getEmail());
+sendMail($person);

@@ -15,7 +15,7 @@ $client->firm_name = 'ВариМет и Ко';
 $person->email = 'someshit@shit.net';
 $person->name = 'Георг';
 
-function sendMail($obj) {
+function sendMail(\models\HasEmailAndName $obj) {
     echo 'почта для ' . $obj->hasName() . ' отправлена на адрес ' . $obj->getEmail();
 }
 

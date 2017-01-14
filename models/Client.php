@@ -3,7 +3,7 @@
 namespace models;
 
 class Client
-    implements HasEmail, HasName
+    implements HasEmailAndName
 {
     public $id;
     public $phone;

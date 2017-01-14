@@ -3,7 +3,7 @@
 namespace models;
 
 class Person
-    implements HasEmail, HasName
+    implements HasEmailAndName
 {
     public $id;
     public $email;

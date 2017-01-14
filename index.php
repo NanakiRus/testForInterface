@@ -16,7 +16,7 @@ $person->email = 'someshit@shit.net';
 $person->name = 'Георг';
 
 function sendMail($obj) {
-    echo 'почта для ' . $obj->hasName() . ' отправлена на адрес ' . $onj->getEmail();
+    echo 'почта для ' . $obj->hasName() . ' отправлена на адрес ' . $obj->getEmail();
 }
 
 sendMail($user);

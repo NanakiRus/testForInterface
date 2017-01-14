@@ -12,6 +12,9 @@ $user->name = 'Уася';
 
 $client->firm_name = 'ВариМет и Ко';
 
+$person->email = 'someshit@shit.net';
+$person->name = 'Георг';
+
 function sendMail($name, $email) {
     echo 'почта для ' . $name . ' отправлена на адрес ' . $email;
 }
@@ -19,3 +22,5 @@ function sendMail($name, $email) {
 sendMail($user->name, $user->getEmail());
 
 sendMail($client->firm_name, $client->getEmail());
+
+sendMail($person->name, $person->getEmail());

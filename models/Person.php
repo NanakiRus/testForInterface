@@ -13,7 +13,7 @@ class Person
 
     public function getEmail()
     {
-
+        return $this->email;
     }
 
 }
